@@ -1,0 +1,7 @@
+{
+  "name": "magicBall",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
