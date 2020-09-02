@@ -50,6 +50,7 @@ const Home: React.FC = () => {
 					</IonCardContent>
 				</IonCard>
 				<IonToast
+					data-testid="home:answer-toast"
 					isOpen={showToast}
 					onDidDismiss={() => setShowToast(false)}
 					message={answer}
