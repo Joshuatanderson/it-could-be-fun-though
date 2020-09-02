@@ -2,4 +2,4 @@
 
 - built in Ionic (React)
 
-- inspired by this lovely video: [https://www.youtube.com/watch?v=SF-psoWdSpo]
+- inspired by [this lovely video:] (https://www.youtube.com/watch?v=SF-psoWdSpo)
