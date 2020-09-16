@@ -11,6 +11,7 @@ import {
 } from "@ionic/react";
 import React, { useState } from "react";
 import mattMeese from "../assets/mattMeese.png";
+import Header from "../components/header/Header";
 import "./Home.css";
 
 const Home: React.FC = () => {
@@ -37,11 +38,7 @@ const Home: React.FC = () => {
 
 	return (
 		<IonPage>
-			<IonHeader>
-				<IonToolbar>
-					<IonTitle>Consult the oracle</IonTitle>
-				</IonToolbar>
-			</IonHeader>
+			<Header/>
 			<IonContent fullscreen>
 				<IonCard>
 					<IonCardHeader>Ask a question, then tap Matt Meese's mug.</IonCardHeader>
