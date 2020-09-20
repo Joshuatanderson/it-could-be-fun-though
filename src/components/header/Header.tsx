@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <IonHeader>
       <IonToolbar>
-        <IonTitle>Consult the oracle</IonTitle>
+        {/* <IonTitle></IonTitle> */}
         <IonButtons slot="secondary">
           <IonButton routerLink="about">
             About
