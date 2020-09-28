@@ -12,7 +12,6 @@ import {
 import React, { useState } from "react";
 import mattMeese from "../assets/mattMeese.png";
 import Header from "../components/header/Header";
-import "./Home.css";
 
 const Home: React.FC = () => {
 	const [showToast, setShowToast] = useState(false);

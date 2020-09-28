@@ -1,24 +1,47 @@
-import React from "react";
-import { IonHeader, IonToolbar, IonTitle, IonButton, IonIcon, IonButtons } from "@ionic/react";
-import { personCircle, search, helpCircle, star, create, ellipsisHorizontal, ellipsisVertical } from 'ionicons/icons';
-
+import React, { useState, useEffect } from "react";
+import {
+	IonHeader,
+	IonToolbar,
+	IonButton,
+	IonButtons,
+	IonIcon,
+} from "@ionic/react";
+import {
+	sunnyOutline,
+	sunnySharp,
+	moonOutline,
+	moonSharp,
+	sunny,
+} from "ionicons/icons";
+import {
+	Plugins,
+	HapticsImpactStyle
+  } from '@capacitor/core';
+const {Haptics} = Plugins;
 
 const Header = () => {
-  return (
-    <IonHeader>
-      <IonToolbar>
-        {/* <IonTitle></IonTitle> */}
-        <IonButtons slot="secondary">
-          <IonButton routerLink="about">
-            About
-          </IonButton>
-		  <IonButton routerLink="home">
-            Home
-          </IonButton>
-        </IonButtons>
-      </IonToolbar>
-    </IonHeader>
-  );
+
+	function handleVibrate(){
+		Haptics.vibrate()
+	}
+
+	return (
+		<IonHeader>
+			<IonToolbar>
+				{/* <IonTitle></IonTitle> */}
+				<IonButtons slot="secondary">
+					<IonButton routerLink="about">About</IonButton>
+					<IonButton routerLink="home">Home</IonButton>
+					<IonButton onClick={handleVibrate}>
+						<IonIcon
+							md={sunnySharp}
+							ios={sunnyOutline}
+						/>
+					</IonButton>
+				</IonButtons>
+			</IonToolbar>
+		</IonHeader>
+	);
 };
 
 export default Header;
